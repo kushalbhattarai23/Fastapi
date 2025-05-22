@@ -18,7 +18,7 @@ def get_db():
         yield db
     finally:
         db.close()
-
+router = APIRouter()
 # SQLAlchemy Models
 class Match(Base):
     __tablename__ = "matches"
