@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Boolean, ForeignK
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker, Session
 from pydantic import BaseModel
-
+from fastapi import APIRouter
 # Database setup
 DATABASE_URL = "sqlite:///./cricket.db"
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
